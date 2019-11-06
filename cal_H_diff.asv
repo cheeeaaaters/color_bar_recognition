@@ -1,0 +1,5 @@
+function [H_diff] = cal_H_diff(c_1,c_2)
+
+
+end
+
