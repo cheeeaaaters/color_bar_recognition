@@ -11,6 +11,7 @@ RB_D=abs(RGBimage(:,:,1)-RGBimage(:,:,3));
 GB_D=abs(RGBimage(:,:,2)-RGBimage(:,:,3));
 variation_index=(RG_D < var_thres) & (RB_D < var_thres) & (GB_D < var_thres);
 mask=~(variation_index | lighten_black_index | lighten_white_index | black_index | white_index);
+%mask=~(black_index | white_index);
 
 
 labelled = zeros(H, W);

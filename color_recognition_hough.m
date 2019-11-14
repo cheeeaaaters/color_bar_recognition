@@ -29,7 +29,7 @@ maxDistance=5;
 
 %failed cases
 %7,9
-img_name='C:\Users\cheee\Desktop\UST\fyp\color_bar\color_bar_recognition_2\color_bar_recognition\color_code\color_code\code\code_a\16.png';
+img_name='C:\Users\cheee\Desktop\UST\fyp\color_bar\color_bar_recognition_2\color_bar_recognition\color_code\color_code\code\code_a\000.jpg';
 img_rgb=imread(img_name);
 [Height,Width,~]=size(img_rgb);
 
@@ -132,7 +132,7 @@ rect_step=0.5;
 Codes=[];
 for i=rect_start:rect_step:rect_end
     temp_P=P;
-    temp_P(2)=temp_P(2)+i;
+    temp_P(2)=temp_P(2)+i/sin(theta(peak_num)*dtr);
     Y_RecoveredCurve = polyval(temp_P,1:Width);
     figure(LIGHTEN_IMG_FIGURE);
     plot(1:Width,Y_RecoveredCurve);

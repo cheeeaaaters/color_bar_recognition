@@ -84,23 +84,6 @@ if no_components>0
     end
 end
 
-%% Find a line fit points
-figure(LIGHTEN_IMG_FIGURE);
-
-% pts=[];
-% for i=1:6
-%     data=COMPONENTS(i).data;
-%     no=COMPONENTS(i).no;
-%     if no>0
-%         max_component_size=data(no).size;
-%         max_component_pts=data(no).points;
-%         avg_pt=mean(max_component_pts,1);
-%         pts=[pts;avg_pt];
-%         figure(LIGHTEN_IMG_FIGURE);
-%         scatter(avg_pt(2),avg_pt(1), 300,Color(i,:),'x');
-%         hold on;
-%     end
-% end
 
 figure(LIGHTEN_IMG_FIGURE);
 pts=[];
